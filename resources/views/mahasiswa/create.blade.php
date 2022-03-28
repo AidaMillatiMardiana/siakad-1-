@@ -4,14 +4,14 @@
 
 <div class="container mt-5">
 
-            <div class="row justify-content-center align-items-center">
-            <div class="card" style="width: 24rem;">
-            <div class="card-header">
-            Tambah Mahasiswa
-</div>
-<div class="card-body">
+ <div class="row justify-content-center align-items-center">
+ <div class="card" style="width: 24rem;">
+ <div class="card-header">
+ Tambah Mahasiswa
+ </div>
+ <div class="card-body">
  @if ($errors->any())
-<div class="alert alert-danger">
+ <div class="alert alert-danger">
  <strong>Whoops!</strong> There were some problems with your input.<br><br>
  <ul>
  @foreach ($errors->all() as $error)
@@ -28,15 +28,27 @@
  </div>
  <div class="form-group">
  <label for="Nama">Nama</label>
- <input type="Nama" name="Nama" class="form-control" id="Nama" ariadescribedby="Nama" >
+ <input type="text" name="Nama" class="form-control" id="Nama" ariadescribedby="Nama" >
  </div>
  <div class="form-group">
  <label for="Kelas">Kelas</label>
- <input type="Kelas" name="Kelas" class="form-control" id="Kelas" ariadescribedby="password" >
+ <input type="text" name="Kelas" class="form-control" id="Kelas" ariadescribedby="password" >
  </div>
  <div class="form-group">
  <label for="Jurusan">Jurusan</label>
- <input type="Jurusan" name="Jurusan" class="form-control" id="Jurusan" ariadescribedby="Jurusan" >
+ <input type="text" name="Jurusan" class="form-control" id="Jurusan" ariadescribedby="Jurusan" >
+ </div>
+ <div class="form-group">
+ <label for="Email">Email</label>
+ <input type="email" name="Email" class="form-control" id="Email" ariadescribedby="Email" >
+ </div>
+ <div class="form-group">
+ <label for="Alamat">Alamat</label>
+ <input type="text" name="Alamat" class="form-control" id="Alamat" ariadescribedby="Alamat" >
+ </div>
+ <div class="form-group">
+ <label for="Tanggallahir">Tanggal Lahir</label>
+ <input type="text" name="TanggalLahir" class="form-control" id="Tanggallahir" ariadescribedby="Tanggallahir" >
  </div>
  <button type="submit" class="btn btn-primary">Submit</button>
  </form>
