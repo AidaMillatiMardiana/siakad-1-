@@ -32,7 +32,12 @@
  </div>
  <div class="form-group">
  <label for="Kelas">Kelas</label>
- <input type="text" name="Kelas" class="form-control" id="Kelas" ariadescribedby="password" >
+ <select name="Kelas" class="form-control" id="kelas">
+     @foreach ($kelas as $kls)
+     <option value="{{$kls->id}}">{{$kls->nama_kelas}}</option>
+     @endforeach
+</select>
+ <!-- <input type="text" name="Kelas" class="form-control" id="Kelas" ariadescribedby="password" > -->
  </div>
  <div class="form-group">
  <label for="Jurusan">Jurusan</label>
