@@ -58,6 +58,10 @@
             @csrf
             @method('DELETE')
             <button type="submit" class="btn btn-danger">Delete</button>
+            @method('NILAI')
+            <button type="button" class="btn btn-danger">
+            <a href="khs.blade.php">Nilai</a>
+            </button>
           </form>
         </td>
       </tr>
